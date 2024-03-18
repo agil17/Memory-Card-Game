@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Galada&display=swap");
+
+.Card {
+  display: flex;
+  flex-direction: column;
+  justify-self: start;
+  align-items: center;
+  background: lightblue;
+  padding: 32px;
+  border-radius: 16px;
+  font-family: "Galada";
+  transition: box-shadow 0.1s ease-in, transform 0.1s ease-in;
+
+  /* & :hover {
+    box-shadow: 0px 0px 24px 4px rgba(98,92,214,1);
+  }
+
+  & :active {
+    transform: scale(1.2);
+  } */
+
+  & > img {
+    width: 281px;
+    height: 500px;
+  }
+
+  & > p {
+    font-size: 2.5rem;
+    padding-top: 32px;
+  }
+}
+
+.Card:hover {
+  box-shadow: 0px 0px 24px 4px rgba(98, 92, 214, 1);
+}
+
+.Card:active {
+  transform: scale(1.05);
+}
